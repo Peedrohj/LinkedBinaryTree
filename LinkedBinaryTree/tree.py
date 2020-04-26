@@ -16,9 +16,9 @@ class Tree:
         return False
 
     def isExternal(self, node):
-        if(node.hasChildren()):
-            return False
-        return True
+        if(not node.hasChildren()):
+            return True
+        return False
 
     def isRoot(self, node):
         if(node.element == self.root.element):
