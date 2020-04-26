@@ -9,13 +9,3 @@ class Position:
         if (self.left or self.right):
             return True
         return False
-
-    def hasLeft(self):
-        if(self.left != None):
-            return True
-        return False
-
-    def hasRight(self):
-        if(self.right != None):
-            return True
-        return False

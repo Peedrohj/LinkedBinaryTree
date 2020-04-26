@@ -70,16 +70,15 @@ class Tree:
         res = ''
 
         if(node == ()):
-            res += str(self.root.element)
-            res += self.toStringPreOrder(self.root.left)
-            res += self.toStringPreOrder(self.root.right)
+            node = self.root
 
         else:
             node = node[0]
-            if(node != None):
-                res += str(node.element)
-                res += self.toStringPreOrder(node.left)
-                res += self.toStringPreOrder(node.right)
+            
+        if(node != None):
+            res += str(node.element)
+            res += self.toStringPreOrder(node.left)
+            res += self.toStringPreOrder(node.right)
 
         return res
 
