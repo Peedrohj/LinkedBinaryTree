@@ -54,7 +54,6 @@ class Tree:
     def insertLeft(self, node, value):
         newNode = Position(value)
         newNode.parent = node
-        newNode.detph = node.detph + 1
 
         node.left = newNode
         self.size += 1
@@ -62,7 +61,6 @@ class Tree:
     def insertRight(self, node, value):
         newNode = Position(value)
         newNode.parent = node
-        newNode.detph = node.detph + 1
 
         node.right = newNode
         self.size += 1

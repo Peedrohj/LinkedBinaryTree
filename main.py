@@ -14,6 +14,5 @@ tree.insertLeft(tree.root.right, 3)
 print('Tree size: ', tree.size)
 print('Root: ', tree.root.element)
 print('Left: ', tree.root.left.element)
-print('Right: ', tree.root.right.left.detph)
 
 
