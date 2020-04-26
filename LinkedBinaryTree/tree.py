@@ -1,5 +1,6 @@
 from position.position import Position
 
+
 class Tree:
     def __init__(self):
         self.root = None
@@ -72,13 +73,28 @@ class Tree:
             res += str(self.root.element)
             res += self.toStringPreOrder(self.root.left)
             res += self.toStringPreOrder(self.root.right)
-        
+
         else:
             node = node[0]
             if(node != None):
                 res += str(node.element)
                 res += self.toStringPreOrder(node.left)
                 res += self.toStringPreOrder(node.right)
-        
+
         return res
-        
+
+    def toStringPosOrder(self, *node):
+        res = ''
+
+        if(node == ()):
+            node = self.root
+
+        else:
+            node = node[0]
+
+        if(node != None):
+            res += self.toStringPosOrder(node.left)
+            res += self.toStringPosOrder(node.right)
+            res += str(node.element)
+
+        return res

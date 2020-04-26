@@ -18,5 +18,7 @@ print('Root: ', tree.root.element)
 print('Left: ', tree.root.left.element)
 
 print('preOrder: ', tree.toStringPreOrder())
+print('posOrder: ', tree.toStringPosOrder())
+
 
 
