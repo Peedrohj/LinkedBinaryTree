@@ -1,9 +1,10 @@
-class Tree:
-    root = None
-    size = 0
+from position.position import Position
 
-    def __init__(self, node):
-        self.root = node
+
+class Tree:
+    def __init__(self):
+        self.root = None
+        self.size = 0
 
     def isEmpty(self):
         if (self.root == None and self.size == 0):
@@ -46,6 +47,23 @@ class Tree:
 
     def children(self, node):
         return [node.left, node.right]
-    
+
     def addRoot(self, node):
         self.root = node
+        self.size = 1
+
+    def insertLeft(self, node, value):
+        newNode = Position(value)
+        newNode.parent = node
+        newNode.detph = node.detph + 1
+
+        node.left = newNode
+        self.size += 1
+
+    def insertRight(self, node, value):
+        newNode = Position(value)
+        newNode.parent = node
+        newNode.detph = node.detph + 1
+
+        node.right = newNode
+        self.size += 1

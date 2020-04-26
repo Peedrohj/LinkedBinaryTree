@@ -1,5 +1,5 @@
 class Position:
-    element = ''
+    element = None
     parent = None
     left = None
     right = None
