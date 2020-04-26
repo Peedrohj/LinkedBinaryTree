@@ -3,15 +3,15 @@
 Implemente uma árvore binária encadeada de inteiros. Sua solução deve conterduas classes, Position e LinkedBinaryTree. A primeira representa um objeto posição da árvore, enquanto que a segunda representa a árvore como um todo. Abaixo, a lista de atributos e métodos que você deve escrever, para cada classe.
 
 ## Position
-
 ### Atributos
 - Elemento
 - Pai
 - Filho Esquerda
 - Filho Direito
 
-## LinkedBinaryTree
+---
 
+## LinkedBinaryTree
 ### Atributos
 
 - Raíz

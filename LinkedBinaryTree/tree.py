@@ -64,3 +64,21 @@ class Tree:
 
         node.right = newNode
         self.size += 1
+
+    def toStringPreOrder(self, *node):
+        res = ''
+
+        if(node == ()):
+            res += str(self.root.element)
+            res += self.toStringPreOrder(self.root.left)
+            res += self.toStringPreOrder(self.root.right)
+        
+        else:
+            node = node[0]
+            if(node != None):
+                res += str(node.element)
+                res += self.toStringPreOrder(node.left)
+                res += self.toStringPreOrder(node.right)
+        
+        return res
+        
