@@ -1,14 +1,21 @@
 class Position:
-    element = None
-    parent = None
-    left = None
-    right = None
-    detph = 0
-
     def __init__(self, element):
         self.element = element
+        self.parent = None
+        self.left = None
+        self.right = None
 
     def hasChildren(self):
-        if (self.left and self.right):
+        if (self.left or self.right):
+            return True
+        return False
+
+    def hasLeft(self):
+        if(self.left != None):
+            return True
+        return False
+
+    def hasRight(self):
+        if(self.right != None):
             return True
         return False

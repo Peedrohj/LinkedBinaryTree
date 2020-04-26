@@ -1,6 +1,5 @@
 from position.position import Position
 
-
 class Tree:
     def __init__(self):
         self.root = None
