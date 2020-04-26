@@ -3,6 +3,7 @@ class Position:
     parent = None
     left = None
     right = None
+    detph = 0
 
     def __init__(self, element):
         self.element = element

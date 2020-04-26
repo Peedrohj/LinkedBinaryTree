@@ -29,11 +29,23 @@ class Tree:
         if(node.left != None):
             return True
         return False
-    
+
     def hasRight(self, node):
         if(node.right != None):
             return True
         return False
 
+    def left(self, node):
+        return node.left
+
+    def right(self, node):
+        return node.right
+
+    def parent(self, node):
+        return node.parent
+
+    def children(self, node):
+        return [node.left, node.right]
     
-    
+    def addRoot(self, node):
+        self.root = node
