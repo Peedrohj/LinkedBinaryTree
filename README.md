@@ -37,4 +37,4 @@ Implemente uma árvore binária encadeada de inteiros. Sua solução deve conter
   pré-ordem
 - String toStringPosOrder() // retorna uma String com os dados da árvore em
   pós-ordem
-- int detph(Position v) // retorna a profundidade de um nó
+- int depth(Position v) // retorna a profundidade de um nó

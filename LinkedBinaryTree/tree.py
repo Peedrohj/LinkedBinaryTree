@@ -74,7 +74,7 @@ class Tree:
 
         else:
             node = node[0]
-            
+
         if(node != None):
             res += str(node.element)
             res += self.toStringPreOrder(node.left)
@@ -97,3 +97,13 @@ class Tree:
             res += str(node.element)
 
         return res
+
+    def depth(self, node):
+        depth = 1
+        
+        if(node.parent == None):
+            return 0
+        
+        depth += self.depth(node.parent)
+        return depth
+
