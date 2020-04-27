@@ -74,7 +74,6 @@ class Tree:
 
         else:
             node = node[0]
-
         if(node != None):
             res += str(node.element)
             res += self.toStringPreOrder(node.left)
